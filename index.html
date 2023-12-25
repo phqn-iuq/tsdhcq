@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTTS2024</title>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <title>TTTS</title>
+       
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+    <!-- Dung cho PC -->
     <div class="pc">
-        <div id="album">
+        <!-- Goc -->
+        <!-- <div id="album">
             <div style="background-image: url(img/00.png);"></div>
             <div style="background-image: url(img/01.png);"></div>
             <div style="background-image: url(img/02.png);"></div>
@@ -20,8 +24,93 @@
             <div style="background-image: url(img/07.png);"></div>
             <div style="background-image: url(img/08.png);"></div>
             <div style="background-image: url(img/09.png);"></div>
+        </div> -->
+        <!-- Goc -->
+ 
+        <div id="book" class="book">
+            <!--Paper 1-->
+            <div id="p1" class="paper">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <img src="./img/00.png" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <img src="./img/01.png" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+    
+            <!--Paper 2-->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content" >
+                        <img src="./img/02.png" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <img src="./img/03.png" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+    
+            <!--Paper 3-->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <img src="./img/04.png" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <img src="./img/05.png" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+      
+            <!--Paper 4-->
+            <div id="p4" class="paper">
+                <div class="front">
+                    <div id="f4" class="front-content">
+                        <img src="./img/06.png" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b4" class="back-content">
+                        <img src="./img/07.png" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
+    
+            <!--Paper 5-->
+            <div id="p5" class="paper">
+                <div class="front">
+                    <div id="f5" class="front-content">
+                        <img src="./img/08.png" width="100%" height="100%">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b5" class="back-content">
+                        <img src="./img/09.png" width="100%" height="100%">
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>  
+
+        <div id="nut">
+            <button id="prev-btn">
+                <i class="far fa-arrow-alt-circle-left"></i>
+           </button>
+           <button id="next-btn">
+                <i class="far fa-arrow-alt-circle-right"></i>
+            </button>
+        </div>
+
+    </div> 
+
+    <!-- Dung cho di dong -->
     <div class="phone">
         <div class="container-phone">
             <div class="slider" id="slider">
@@ -63,22 +152,16 @@
             <div class="btn-right" id="btn-right">
                 <i class="fas fa-chevron-circle-right"></i>
             </div>
-
         </div>
-        <!-- <div class="btn-left" id="btn-left">
-            <i class="fas fa-chevron-circle-left"></i>
-        </div> 
-        <div class="btn-right" id="btn-right">
-            <i class="fas fa-chevron-circle-right"></i>
-        </div> -->
     </div>
+ 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-    <script type="text/javascript" src="./turn.min.js"></script>
-    <script type="text/javascript" src="./turn.js"></script>
+    <!-- <script type="text/javascript" src="./turn.min.js"></script>
+    <script type="text/javascript" src="./turn.js"></script> -->
     <script type="text/javascript" src="./main.js"></script>
-    <script>
+    <!-- <script>
         $('#album').turn({gradients: true, acceleration: true});
-    </script>
+    </script> -->
 </body>
 </html>

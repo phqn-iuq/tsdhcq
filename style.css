@@ -16,12 +16,15 @@ body {
     background-size: cover;
     background-position: center;
     padding: 20px;
+
 }
-.phone{
+
+/* Dung cho Phone */
+ .phone{
     align-items: center;
     justify-self: center;
     height: 100vh;
-}
+} 
 
 .container-phone{
     position: relative;
@@ -53,7 +56,6 @@ body {
 
 .btn-right,
 .btn-left {
-    /* display: flex; */
     position: absolute;
     top: 50%;
     color: #f78989;
@@ -76,30 +78,156 @@ body {
    right: 3px;
 }
 
-
 .phone{
     display: none;
 }
 
-.pc{
+/* Dung cho PC */
+/* Goc */
+/* .pc{
     position: relative;
     align-items: center;
     justify-self: center;
     background-position: center;
-    overflow: hidden;
-}
-#album{
+    overflow: hidden; 
+} */
+
+
+/* #album{
     position:absolute;
     margin: 5% auto;
     width: 780px;
-    height: 580px;
-}
+    height: 550px;
+} */
 
-#album .turn-page{
+/* #album .turn-page{
 	background-color:#ccc;
     background-size: 100% 100%;
+} */
+/* Goc */
+
+/* Moi */
+.pc{
+    /* align-items: center;
+    justify-self: center; */
+    height: 100vh;
+}
+.book {
+    position: relative;
+    width: 397px;
+    height: 556px;
+    transition: transform 0.5s ease-in;
+    margin: 2% auto;
+
 }
 
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+}
+
+image {
+    width: 100%;
+    height: 100%;
+}
+
+.front, 
+.back {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: 0.75s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid powderblue;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content, 
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg);
+}
+/* Paper flip*/
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+#nut {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+/* Button*/
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 5px;
+    transition: transform 0.5s ease-out;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: rgb(36, 49, 236);
+}
+
+i{
+    font-size: 40px;
+    color: gray;
+    background-color: transparent;
+}
+
+/*Paper stack order*/
+#p1 {
+    z-index: 5;
+}
+#p2 {
+    z-index: 4;
+}
+#p3 {
+    z-index: 3;
+}
+#p4 {
+    z-index: 2;
+}
+#p5 {
+    z-index: 1;
+}
+
+/* Moi */
+
+
+/* Thiet lap lua cho loai giao dien Phone hay PC */
 @media (max-width: 740px) {
     .phone{
        display: block;
