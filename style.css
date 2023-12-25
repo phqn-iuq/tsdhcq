@@ -9,7 +9,6 @@ body {
     align-items: center;
     justify-self: center;
     height: 100vh;
-    /* background: linear-gradient(to right, #859398, #283448); */
     background-image: url("./img/a.jpg");
     -webkit-background-size: cover;
     background-repeat: no-repeat;
@@ -118,9 +117,7 @@ body {
     height: 556px;
     transition: transform 0.5s ease-in;
     margin: 2% auto;
-
 }
-
 
 .paper {
     position: absolute;
